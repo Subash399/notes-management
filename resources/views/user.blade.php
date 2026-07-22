@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Form</title>
+</head>
+<body>
+
+<h2>Registration Form</h2>
+
+<form action="/user" method="POST">
+    @csrf
+    <label>Name:</label>
+    <input type="text" name="name" >
+    <br><br>
+
+    <label>Email:</label>
+    <input type="email" name="email" >
+    <br><br>
+
+    <label>Password:</label>
+    <input type="password" name="password">
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>
